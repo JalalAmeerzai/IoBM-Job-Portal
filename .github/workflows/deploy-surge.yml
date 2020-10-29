@@ -32,4 +32,4 @@ jobs:
         run: npm install -g surge
         
       - name: Deploy Website on Surge
-        run: surge ./ iobm-job-portal.surge.sh --token ${{secret.SURGE_LOGIN_TOKEN}}
+        run: surge ./ iobm-job-portal.surge.sh --token ${{secrets.SURGE_LOGIN_TOKEN}}
